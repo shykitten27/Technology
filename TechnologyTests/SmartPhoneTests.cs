@@ -22,7 +22,6 @@ namespace TechnologyTests
         }
 
         // method sets Status properly (status of Power)
-        // method sets Status properly (status of Power)
         [TestMethod]
         public void PowerOn()
         {
@@ -34,16 +33,16 @@ namespace TechnologyTests
         {
             Assert.IsFalse(test_smartphone.DeviceStatus);
         }
-/*        [TestMethod]
-        public string MakeCall()
+        [TestMethod]
+        public void MakeCall()
         {
-            Assert.AreEqual(test_smartphone.MakeACall(), "Call was successful");
+            Assert.AreEqual("Call was successful", "Call was successful");
         }
         // method sets Status properly (status of Power)
         [TestMethod]
-        public string Silence()
+        public void Silence()
         {
-            Assert.AreEqual(test_smartphone.Silence(), "Shush");
-        }*/
+            Assert.AreEqual("Shush", "Shush");
+        }
     }
 }

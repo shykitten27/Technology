@@ -9,15 +9,15 @@ namespace Technology
             Computer testComputer = new Computer("Gaming", "Ben", 2020, 16.0, "Windows 10", false);
             Laptop testLaptop = new Laptop("Dell", "Donna", 2021, 16.0, "Windows 10", false, "BIGtrackpad");
             SmartPhone testSmartPhone = new SmartPhone("Galaxy S21", "Donna", 2021, 8.0, "Android 11", true, "T-Mobile");
-            Console.WriteLine(testComputer.Owner);
-            Console.WriteLine(testSmartPhone.DeviceStatus);
-            Console.WriteLine(testLaptop.Trackpad);
-            Console.WriteLine(testLaptop.OperatingSystem);
+            Console.WriteLine("Computer Owner: " + testComputer.Owner);
+            Console.WriteLine("SmartPhone status: " + testSmartPhone.DeviceStatus);
+            Console.WriteLine("Laptop property: " + testLaptop.Trackpad);
+            Console.WriteLine("Laptop OS: " + testLaptop.OperatingSystem);
             testLaptop.PowerOn();
-            Console.WriteLine(testLaptop.DeviceStatus);
-            Console.WriteLine(testSmartPhone.Silence());
+            Console.WriteLine("Laptop status: " + testLaptop.DeviceStatus);
+            Console.WriteLine("SmartPhone Silence: " + testSmartPhone.Silence());
             testSmartPhone.PowerOff();
-            Console.WriteLine(testSmartPhone.DeviceStatus);
+            Console.WriteLine("SmartPhone status: " + testSmartPhone.DeviceStatus);
         }
     }
 }

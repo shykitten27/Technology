@@ -4,14 +4,15 @@ using Technology;
 
 namespace Technology
 {
-    class ComputerTests
+    [TestClass]
+    public class ComputerTests
     {
-        // add emptyTest so we can configure our runtime environment (remove this test before pushing to your personal GitHub account)
+/*        // add emptyTest so we can configure our runtime environment (remove this test before pushing to your personal GitHub account)
         [TestMethod]
         public void EmptyTest()
         {
             Assert.AreEqual(1, 1, .001);
-        }
+        }*/
 
         // Create test_computer for testing
         Computer test_computer;
