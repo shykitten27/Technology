@@ -15,7 +15,7 @@ namespace TechnologyTests
         public void CreateSmartPhoneObject()
         {
             test_smartphone1 = new SmartPhone("Galaxy S21", "Donna", 2021, 8.0, "Android 11", true, "T-Mobile"); // the AbStractEntity ID, name, owner, yearMade, ram, operatingSystem, deviceStatus
-            test_smartphone1 = new SmartPhone("IPhone 11", "Steve", 2019, 8.0, "iOS", true, "T-Mobile"); // the AbStractEntity ID, name, owner, yearMade, ram, operatingSystem, deviceStatus
+            test_smartphone2 = new SmartPhone("IPhone 11", "Steve", 2019, 8.0, "iOS", true, "T-Mobile"); // the AbStractEntity ID, name, owner, yearMade, ram, operatingSystem, deviceStatus
         }
 
         [TestMethod]

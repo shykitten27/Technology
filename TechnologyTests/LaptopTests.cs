@@ -14,14 +14,14 @@ namespace TechnologyTest
         public void CreateLaptopObject()
         {
             test_laptop1 = new Laptop("Dell", "Donna", 2021, 16.0, "Windows 10", false, "BIGtrackpad"); // the AbStractEntity ID, name, owner, yearMade, ram, operatingSystem, deviceStatus
-            test_laptop1 = new Laptop("Microsoft", "Erica", 2019, 16.0, "Windows 10", false, "smalltrackpad"); // the AbStractEntity ID, name, owner, yearMade, ram, operatingSystem, deviceStatus
+            test_laptop2 = new Laptop("Microsoft", "Erica", 2019, 16.0, "Windows 10", false, "smalltrackpad"); // the AbStractEntity ID, name, owner, yearMade, ram, operatingSystem, deviceStatus
         }
 
         [TestMethod]
         public void TestSettingDeviceId()
         {
             Assert.IsFalse(test_laptop1.DeviceId == test_laptop1.DeviceId); //Ids are NOT equal
-            Assert.IsTrue(test_laptop1.DeviceId == (test_laptop1.DeviceId + 1)); //second id is greater by 1
+            Assert.IsTrue(test_laptop2.DeviceId == (test_laptop1.DeviceId + 1)); //second id is greater by 1
         }
 
         [TestMethod]
