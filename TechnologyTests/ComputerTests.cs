@@ -37,12 +37,14 @@ namespace Technology
             Assert.AreEqual(test_computer1.OperatingSystem, "Windows 10");
             Assert.IsFalse(test_computer1.DeviceStatus);
         }
+
         // method sets Status properly (status of Power)
         [TestMethod]
         public void PowerOn()
         {
             Assert.IsTrue(test_computer1.DeviceStatus);
         }
+
         // method sets Status properly (status of Power)
         [TestMethod]
         public void PowerOff()
