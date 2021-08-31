@@ -15,7 +15,7 @@ namespace Technology
         [TestInitialize]
         public void CreateComputerObject()
         {
-            test_computer = new Computer("Gaming", "Ben", 2020, 16.0, "Windows 10", false); // the AbStractEntity ID, name, owner, yearMade, ram, operatingSystem, deviceStatus
+            test_computer1 = new Computer("Gaming", "Ben", 2020, 16.0, "Windows 10", false); // the AbStractEntity ID, name, owner, yearMade, ram, operatingSystem, deviceStatus
             test_computer2 = new Computer("School", "Erica", 2019, 16.0, "Windows 10", false); // the AbStractEntity ID, name, owner, yearMade, ram, operatingSystem, deviceStatus
         }
 
