@@ -14,8 +14,8 @@ namespace Technology
             Console.WriteLine("Laptop property: " + testLaptop.Trackpad);
             Console.WriteLine("Laptop OS: " + testLaptop.OperatingSystem);
             testLaptop.PowerOn();
-            Console.WriteLine("Laptop status: " + testLaptop.DeviceStatus);
-            Console.WriteLine("SmartPhone Silence: " + testSmartPhone.Silence());
+            Console.WriteLine("Laptop status after PowerOn(): " + testLaptop.DeviceStatus);
+            Console.WriteLine("SmartPhone Silence returns: " + testSmartPhone.Silence());
             testSmartPhone.PowerOff();
             Console.WriteLine("SmartPhone status: " + testSmartPhone.DeviceStatus);
         }
