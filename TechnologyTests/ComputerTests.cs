@@ -15,14 +15,14 @@ namespace Technology
         [TestInitialize]
         public void CreateComputerObject()
         {
-            test_computer1 = new Computer("Gaming", "Ben", 2020, 16.0, "Windows 10", false); // the AbStractEntity ID, name, owner, yearMade, ram, operatingSystem, deviceStatus
+            test_computer1 = new Computer("Gaming", "Ben", 2020, 16.0, "Windows 10", true); // the AbStractEntity ID, name, owner, yearMade, ram, operatingSystem, deviceStatus
             test_computer2 = new Computer("School", "Erica", 2019, 16.0, "Windows 10", false); // the AbStractEntity ID, name, owner, yearMade, ram, operatingSystem, deviceStatus
         }
 
         [TestMethod]
         public void TestSettingDeviceId()
         {
-            Assert.IsFalse(test_computer1.DeviceId == test_computer1.DeviceId); //Ids are NOT equal
+            Assert.IsFalse(test_computer1.DeviceId == test_computer2.DeviceId); //Ids are NOT equal
             Assert.IsTrue(test_computer2.DeviceId == (test_computer1.DeviceId + 1)); //second id is greater by 1
         }
 
@@ -49,7 +49,7 @@ namespace Technology
         [TestMethod]
         public void PowerOff()
         {
-            Assert.IsFalse(test_computer1.DeviceStatus);
+            Assert.IsFalse(test_computer2.DeviceStatus);
         }
     }
 }
