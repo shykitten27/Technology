@@ -34,7 +34,7 @@ namespace TechnologyTest
             Assert.AreEqual(test_laptop1.RAM, 16.0);
             Assert.AreEqual(test_laptop1.OperatingSystem, "Windows 10");
             Assert.IsFalse(test_laptop1.DeviceStatus);
-            //Assert.AreEqual(test_laptop1.Trackpad, "BIGtrackpad");
+            Assert.AreEqual(test_laptop1.Trackpad, "BIGtrackpad");
         }
 
         // method sets Status properly (status of Power)
